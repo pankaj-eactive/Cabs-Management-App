@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "format:RO-{MM}-{YYYY}-{###}",
+ "creation": "2025-07-27 02:08:00.035797",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "customer_number",
+  "pickup_time",
+  "column_break_eo7h",
+  "cab",
+  "status",
+  "pick_up_address",
+  "section_break_juuk",
+  "ride_order_item",
+  "is_published",
+  "route"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "customer_number",
+   "fieldtype": "Phone",
+   "label": "Customer Number"
+  },
+  {
+   "fieldname": "pickup_time",
+   "fieldtype": "Datetime",
+   "label": "Pickup Time"
+  },
+  {
+   "fieldname": "column_break_eo7h",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "New\nAccepted\nRejected"
+  },
+  {
+   "fieldname": "pick_up_address",
+   "fieldtype": "Small Text",
+   "label": "Pick Up Address"
+  },
+  {
+   "fieldname": "cab",
+   "fieldtype": "Link",
+   "label": "Cab",
+   "options": "Cab"
+  },
+  {
+   "fieldname": "ride_order_item",
+   "fieldtype": "Table",
+   "label": "Ride Order Item",
+   "options": "Ride Order Item"
+  },
+  {
+   "fieldname": "section_break_juuk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  }
+ ],
+ "grid_page_length": 50,
+ "has_web_view": 1,
+ "is_published_field": "is_published",
+ "links": [],
+ "modified": "2025-07-27 02:52:41.954996",
+ "modified_by": "Administrator",
+ "module": "Cabs Management",
+ "name": "Ride Order",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "cabs",
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
