@@ -1,7 +1,9 @@
 {% extends "templates/web.html" %}
 
 {% block page_content %}
-<h1>{{ title }}</h1>
+<h2>{{ title }}</h>
+<h2>{{ doc.make }}</h2>
+<h2>{{ doc.model }}</h2>
+<a class="btn btn-info" href="/book-ride/new?cab={{doc.name}}">Book A Ride</a>
 {% endblock %}
 
-<!-- this is a sample default web page template -->
