@@ -3,7 +3,11 @@
 
 # import frappe
 from frappe.model.document import Document
+import frappe
 
 
 class Test(Document):
 	pass
+
+	def before_save(self):
+		frappe.msgprint(self.name)
